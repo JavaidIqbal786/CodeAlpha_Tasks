@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Personal Book Library</h1>
+        
+        <!-- Search Input -->
+        <input type="text" id="search" placeholder="Search books...">
+        
+        <!-- Filters -->
+        <div class="filters">
+            <select id="category-filter">
+                <!-- Categories will be populated dynamically -->
+            </select>
+            <label>
+                <input type="checkbox" id="borrowed-toggle">
+                Show Borrowed Only
+            </label>
+        </div>
+        
+        <!-- Book List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Books will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
